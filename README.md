@@ -8,6 +8,16 @@ The historical order book data used in this project was downloaded and formatted
 - **`Market_Making_final.ipynb`**  
   Contains the **base version** of the simulator. Quotes are placed deterministically at spread-adjusted prices, and fills are assumed to happen immediately when a price match occurs. Useful for understanding core logic: quoting, execution, inventory management, and mark-to-market PnL tracking.
 
+- **Market Neutral Strategy**
+
+> - !["Strat 1"](10June2025_strat0.png)
+> - (Performance = 68 %)
+
+- **Inventory Aware Smart Strategy**
+
+> - !["Strat 1"](10June2025_strat1.png)
+> - (Performance = 79 %)
+
 - **`Realistic.ipynb`**  
   Extends the base simulator with two realism enhancements:
   - **Execution Probability:** Not all limit orders are assumed to be filled. Each order has a probabilistic chance of execution, simulating queue position and competition.
